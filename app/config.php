@@ -1,0 +1,40 @@
+<?php
+$CONFIG = [
+  'htaccess.RewriteBase' => '/',
+  'memcache.local' => '\\OC\\Memcache\\APCu',
+  'apps_paths' => [
+    [
+      'path' => '/var/www/html/apps',
+      'url' => '/apps',
+      'writable' => false,
+    ], [
+      'path' => '/var/www/html/custom_apps',
+      'url' => '/custom_apps',
+      'writable' => true,
+    ],
+  ],
+  'passwordsalt' => 'ZRqVHgkkm/BHGIZ/5yNaIOT+z1dP9Q',
+  'secret' => 'yV8Vvlvln50nQTXTHwXOzTm2iJ+ELYabSKglaxFpt4F9QAHw',
+  'trusted_domains' => [
+    'localhost:8080',
+    'data.hnquang.duckdns.org',
+  ],
+  'datadirectory' => '/var/www/data',
+  'dbtype' => 'mysql',
+  'version' => '29.0.0',
+  'overwrite.cli.url' => 'http://localhost',
+  'dbname' => 'nextcloud',
+  'dbhost' => 'mariadb',
+  'dbport' => '',
+  'dbtableprefix' => 'oc_',
+  'mysql.utf8mb4' => true,
+  'dbuser' => 'hnquang',
+  'dbpassword' => 'gaK4A514ROTb',
+  'instanceid' => 'oc9sg3k3xxxr',
+  'installed' => true,
+  'overwriteprotocol' => 'https',
+  'check_data_directory_permissions' => false,
+  // 'config_is_read_only' => true,
+  'memories.exiftool' => '/var/www/html/custom_apps/memories/exiftool-bin/exiftool-amd64-glibc',
+  'memories.vod.path' => '/var/www/html/custom_apps/memories/exiftool-bin/go-vod-amd64',
+];
